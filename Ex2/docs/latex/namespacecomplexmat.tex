@@ -1,0 +1,144 @@
+\doxysection{complexmat Module Reference}
+\hypertarget{namespacecomplexmat}{}\label{namespacecomplexmat}\index{complexmat@{complexmat}}
+\doxysubsubsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}
+\item 
+interface \mbox{\hyperlink{interfacecomplexmat_1_1operator_07_8tr_8_08}{operator(.\+tr.)}}
+\item 
+interface \mbox{\hyperlink{interfacecomplexmat_1_1operator_07_8adj_8_08}{operator(.\+adj.)}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a401120b2577ab48b1a2efb0c41e8aaa0}{initmatrix}} (m, nrows, ncols)
+\begin{DoxyCompactList}\small\item\em Initialize a complex matrix of given dimensions. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_ae6b0d18262ab5a01de8ad6569e5980bc}{fillrandomcomplexmatrix}} (m)
+\begin{DoxyCompactList}\small\item\em Fill a complex matrix with random complex numbers. \end{DoxyCompactList}\item 
+complex(real32) function \mbox{\hyperlink{namespacecomplexmat_a187cee9f2fc8e5abe8bf0516009880a8}{trace}} (m)
+\begin{DoxyCompactList}\small\item\em Compute the trace of a complex matrix. \end{DoxyCompactList}\item 
+type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}) function \mbox{\hyperlink{namespacecomplexmat_a4debcf0407b75c17853e8e76c08ca79f}{adjoint}} (m)
+\begin{DoxyCompactList}\small\item\em Compute the adjoint (conjugate transpose) of a complex matrix. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a5c8cbf0611786365a909c447f15dd4c8}{writematrix}} (m, filename, do\+\_\+print)
+\begin{DoxyCompactList}\small\item\em Write a complex matrix to a text file and optionally print it. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a05e39a399096e5105a0d4758604d6430}{deallocatematrix}} (m)
+\begin{DoxyCompactList}\small\item\em Deallocate the memory of a complex matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecomplexmat_doc-func-members}
+\doxysubsection{Function/\+Subroutine Documentation}
+\Hypertarget{namespacecomplexmat_a4debcf0407b75c17853e8e76c08ca79f}\index{complexmat@{complexmat}!adjoint@{adjoint}}
+\index{adjoint@{adjoint}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{adjoint()}{adjoint()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_a4debcf0407b75c17853e8e76c08ca79f} 
+type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}) function complexmat\+::adjoint (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(in)}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Compute the adjoint (conjugate transpose) of a complex matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em M} & Input complex matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+adj\+\_\+M The adjoint matrix (conjugate transpose of M). 
+\end{DoxyReturn}
+\Hypertarget{namespacecomplexmat_a05e39a399096e5105a0d4758604d6430}\index{complexmat@{complexmat}!deallocatematrix@{deallocatematrix}}
+\index{deallocatematrix@{deallocatematrix}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{deallocatematrix()}{deallocatematrix()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_a05e39a399096e5105a0d4758604d6430} 
+subroutine complexmat\+::deallocatematrix (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(inout)}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Deallocate the memory of a complex matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in,out}}  & {\em M} & Complex matrix to be deallocated. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacecomplexmat_ae6b0d18262ab5a01de8ad6569e5980bc}\index{complexmat@{complexmat}!fillrandomcomplexmatrix@{fillrandomcomplexmatrix}}
+\index{fillrandomcomplexmatrix@{fillrandomcomplexmatrix}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{fillrandomcomplexmatrix()}{fillrandomcomplexmatrix()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_ae6b0d18262ab5a01de8ad6569e5980bc} 
+subroutine complexmat\+::fillrandomcomplexmatrix (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(inout)}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Fill a complex matrix with random complex numbers. 
+
+Each element is assigned a random real and imaginary part in the interval (0,1).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in,out}}  & {\em M} & Matrix to be filled. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacecomplexmat_a401120b2577ab48b1a2efb0c41e8aaa0}\index{complexmat@{complexmat}!initmatrix@{initmatrix}}
+\index{initmatrix@{initmatrix}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{initmatrix()}{initmatrix()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_a401120b2577ab48b1a2efb0c41e8aaa0} 
+subroutine complexmat\+::initmatrix (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(out)}]{m}{, }\item[{integer, intent(in)}]{nrows}{, }\item[{integer, intent(in)}]{ncols}{}\end{DoxyParamCaption})}
+
+
+
+Initialize a complex matrix of given dimensions. 
+
+Allocates memory for the complex matrix elements and sets its size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em M} & Complex matrix to initialize. \\
+\hline
+\mbox{\texttt{in}}  & {\em nrows} & Number of rows. \\
+\hline
+\mbox{\texttt{in}}  & {\em ncols} & Number of columns.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Stops} & execution if invalid dimensions are provided. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{namespacecomplexmat_a187cee9f2fc8e5abe8bf0516009880a8}\index{complexmat@{complexmat}!trace@{trace}}
+\index{trace@{trace}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_a187cee9f2fc8e5abe8bf0516009880a8} 
+complex(real32) function complexmat\+::trace (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(in)}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Compute the trace of a complex matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em M} & Complex matrix (square). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tr\+\_\+M Complex trace of M. 
+\end{DoxyReturn}
+\Hypertarget{namespacecomplexmat_a5c8cbf0611786365a909c447f15dd4c8}\index{complexmat@{complexmat}!writematrix@{writematrix}}
+\index{writematrix@{writematrix}!complexmat@{complexmat}}
+\doxysubsubsection{\texorpdfstring{writematrix()}{writematrix()}}
+{\footnotesize\ttfamily \label{namespacecomplexmat_a5c8cbf0611786365a909c447f15dd4c8} 
+subroutine complexmat\+::writematrix (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}), intent(in)}]{m}{, }\item[{character(len=\texorpdfstring{$\ast$}{*}), intent(in)}]{filename}{, }\item[{logical, intent(in)}]{do\+\_\+print}{}\end{DoxyParamCaption})}
+
+
+
+Write a complex matrix to a text file and optionally print it. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em M} & Matrix to be written. \\
+\hline
+\mbox{\texttt{in}}  & {\em filename} & Output file name. \\
+\hline
+\mbox{\texttt{in}}  & {\em do\+\_\+print} & Logical flag to print matrix on screen. \\
+\hline
+\end{DoxyParams}

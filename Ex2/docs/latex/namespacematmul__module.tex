@@ -1,0 +1,52 @@
+\doxysection{matmul\+\_\+module Module Reference}
+\hypertarget{namespacematmul__module}{}\label{namespacematmul__module}\index{matmul\_module@{matmul\_module}}
+\doxysubsubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacematmul__module_a080fe35d92b4d441d4496f93be38bb57}{matmul\+\_\+rowbycol}} (a, b, c, m, n, p, do\+\_\+print)
+\item 
+subroutine \mbox{\hyperlink{namespacematmul__module_a46d4e89cdb053950bde5028327262db0}{matmul\+\_\+colbyrow}} (a, b, c, m, n, p, do\+\_\+print)
+\begin{DoxyCompactList}\small\item\em Perform matrix multiplication ( C = A \textbackslash{}times B ) using column-\/by-\/row order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacematmul__module_doc-func-members}
+\doxysubsection{Function/\+Subroutine Documentation}
+\Hypertarget{namespacematmul__module_a46d4e89cdb053950bde5028327262db0}\index{matmul\_module@{matmul\_module}!matmul\_colbyrow@{matmul\_colbyrow}}
+\index{matmul\_colbyrow@{matmul\_colbyrow}!matmul\_module@{matmul\_module}}
+\doxysubsubsection{\texorpdfstring{matmul\_colbyrow()}{matmul\_colbyrow()}}
+{\footnotesize\ttfamily \label{namespacematmul__module_a46d4e89cdb053950bde5028327262db0} 
+subroutine matmul\+\_\+module\+::matmul\+\_\+colbyrow (\begin{DoxyParamCaption}\item[{real(real32), dimension(m,n), intent(in)}]{a}{, }\item[{real(real32), dimension(n,p), intent(in)}]{b}{, }\item[{real(real32), dimension(m,p), intent(out)}]{c}{, }\item[{integer, intent(in)}]{m}{, }\item[{integer, intent(in)}]{n}{, }\item[{integer, intent(in)}]{p}{, }\item[{logical, intent(in), optional}]{do\+\_\+print}{}\end{DoxyParamCaption})}
+
+
+
+Perform matrix multiplication ( C = A \textbackslash{}times B ) using column-\/by-\/row order. 
+
+This subroutine computes the product of two matrices using the row-\/by-\/col algorithm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em A(m,n)} & Left-\/hand matrix operand. \\
+\hline
+\mbox{\texttt{in}}  & {\em B(n,p)} & Right-\/hand matrix operand. \\
+\hline
+\mbox{\texttt{out}}  & {\em C(m,p)} & Result matrix. \\
+\hline
+\mbox{\texttt{in}}  & {\em m} & Number of rows in A. \\
+\hline
+\mbox{\texttt{in}}  & {\em n} & Number of columns in A and rows in B. \\
+\hline
+\mbox{\texttt{in}}  & {\em p} & Number of columns in B. \\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & do\+\_\+print Logical flag to print the resulting matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Calls \textquotesingle{}checkpoint\textquotesingle{} from the \textquotesingle{}debugger\textquotesingle{} module to ensure the dimension match of the two matrices. 
+\end{DoxyNote}
+\Hypertarget{namespacematmul__module_a080fe35d92b4d441d4496f93be38bb57}\index{matmul\_module@{matmul\_module}!matmul\_rowbycol@{matmul\_rowbycol}}
+\index{matmul\_rowbycol@{matmul\_rowbycol}!matmul\_module@{matmul\_module}}
+\doxysubsubsection{\texorpdfstring{matmul\_rowbycol()}{matmul\_rowbycol()}}
+{\footnotesize\ttfamily \label{namespacematmul__module_a080fe35d92b4d441d4496f93be38bb57} 
+subroutine matmul\+\_\+module\+::matmul\+\_\+rowbycol (\begin{DoxyParamCaption}\item[{real(real32), dimension(m,n), intent(in)}]{a}{, }\item[{real(real32), dimension(n,p), intent(in)}]{b}{, }\item[{real(real32), dimension(m,p), intent(out)}]{c}{, }\item[{integer, intent(in)}]{m}{, }\item[{integer, intent(in)}]{n}{, }\item[{integer, intent(in)}]{p}{, }\item[{logical, intent(in), optional}]{do\+\_\+print}{}\end{DoxyParamCaption})}
+

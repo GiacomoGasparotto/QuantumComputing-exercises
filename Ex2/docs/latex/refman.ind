@@ -1,0 +1,81 @@
+\begin{theindex}
+
+  \item {adjoint}
+    \subitem {complexmat}, \hyperpage{7}
+    \subitem {complexmat::operator(.adj.)}, \hyperpage{14}
+
+  \indexspace
+
+  \item {checkpoint}
+    \subitem {debugger}, \hyperpage{10}
+  \item {complexmat}, \hyperpage{7}
+    \subitem {adjoint}, \hyperpage{7}
+    \subitem {deallocatematrix}, \hyperpage{8}
+    \subitem {fillrandomcomplexmatrix}, \hyperpage{8}
+    \subitem {initmatrix}, \hyperpage{8}
+    \subitem {trace}, \hyperpage{9}
+    \subitem {writematrix}, \hyperpage{9}
+  \item {complexmat.f90}, \hyperpage{15}
+  \item {complexmat::complex8\_matrix}, \hyperpage{13}
+    \subitem {elem}, \hyperpage{13}
+    \subitem {size}, \hyperpage{13}
+  \item {complexmat::operator(.adj.)}, \hyperpage{13}
+    \subitem {adjoint}, \hyperpage{14}
+  \item {complexmat::operator(.tr.)}, \hyperpage{14}
+    \subitem {trace}, \hyperpage{14}
+
+  \indexspace
+
+  \item {deallocatematrix}
+    \subitem {complexmat}, \hyperpage{8}
+  \item {debugger}, \hyperpage{9}
+    \subitem {checkpoint}, \hyperpage{10}
+  \item {debugger.f90}, \hyperpage{16}
+
+  \indexspace
+
+  \item {elem}
+    \subitem {complexmat::complex8\_matrix}, \hyperpage{13}
+  \item {Ex2-\/Gasparotto-\/CODE.f90}, \hyperpage{16}
+    \subitem {main}, \hyperpage{16}
+
+  \indexspace
+
+  \item {fillrandomcomplexmatrix}
+    \subitem {complexmat}, \hyperpage{8}
+
+  \indexspace
+
+  \item {initmatrix}
+    \subitem {complexmat}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Ex2-\/Gasparotto-\/CODE.f90}, \hyperpage{16}
+  \item {matmul.f90}, \hyperpage{16}
+  \item {matmul\_colbyrow}
+    \subitem {matmul\_module}, \hyperpage{11}
+  \item {matmul\_module}, \hyperpage{11}
+    \subitem {matmul\_colbyrow}, \hyperpage{11}
+    \subitem {matmul\_rowbycol}, \hyperpage{11}
+  \item {matmul\_rowbycol}
+    \subitem {matmul\_module}, \hyperpage{11}
+
+  \indexspace
+
+  \item {size}
+    \subitem {complexmat::complex8\_matrix}, \hyperpage{13}
+
+  \indexspace
+
+  \item {trace}
+    \subitem {complexmat}, \hyperpage{9}
+    \subitem {complexmat::operator(.tr.)}, \hyperpage{14}
+
+  \indexspace
+
+  \item {writematrix}
+    \subitem {complexmat}, \hyperpage{9}
+
+\end{theindex}

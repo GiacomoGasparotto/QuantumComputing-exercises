@@ -1,0 +1,42 @@
+\doxysection{complexmat.\+f90 File Reference}
+\hypertarget{complexmat_8f90}{}\label{complexmat_8f90}\index{complexmat.f90@{complexmat.f90}}
+
+
+Module for handling complex single-\/precision matrices.  
+
+
+\doxysubsubsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complexmat\+::complex8\+\_\+matrix}}
+\item 
+interface \mbox{\hyperlink{interfacecomplexmat_1_1operator_07_8tr_8_08}{complexmat\+::operator(.\+tr.)}}
+\item 
+interface \mbox{\hyperlink{interfacecomplexmat_1_1operator_07_8adj_8_08}{complexmat\+::operator(.\+adj.)}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecomplexmat}{complexmat}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a401120b2577ab48b1a2efb0c41e8aaa0}{complexmat\+::initmatrix}} (m, nrows, ncols)
+\begin{DoxyCompactList}\small\item\em Initialize a complex matrix of given dimensions. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_ae6b0d18262ab5a01de8ad6569e5980bc}{complexmat\+::fillrandomcomplexmatrix}} (m)
+\begin{DoxyCompactList}\small\item\em Fill a complex matrix with random complex numbers. \end{DoxyCompactList}\item 
+complex(real32) function \mbox{\hyperlink{namespacecomplexmat_a187cee9f2fc8e5abe8bf0516009880a8}{complexmat\+::trace}} (m)
+\begin{DoxyCompactList}\small\item\em Compute the trace of a complex matrix. \end{DoxyCompactList}\item 
+type(\mbox{\hyperlink{structcomplexmat_1_1complex8__matrix}{complex8\+\_\+matrix}}) function \mbox{\hyperlink{namespacecomplexmat_a4debcf0407b75c17853e8e76c08ca79f}{complexmat\+::adjoint}} (m)
+\begin{DoxyCompactList}\small\item\em Compute the adjoint (conjugate transpose) of a complex matrix. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a5c8cbf0611786365a909c447f15dd4c8}{complexmat\+::writematrix}} (m, filename, do\+\_\+print)
+\begin{DoxyCompactList}\small\item\em Write a complex matrix to a text file and optionally print it. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{namespacecomplexmat_a05e39a399096e5105a0d4758604d6430}{complexmat\+::deallocatematrix}} (m)
+\begin{DoxyCompactList}\small\item\em Deallocate the memory of a complex matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module for handling complex single-\/precision matrices. 
+
+This module defines a custom type \textquotesingle{}complex8\+\_\+matrix\textquotesingle{} and provides several operations such as initialization, random filling, trace computation, adjoint, writing to file, and deallocation. 

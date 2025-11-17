@@ -1,0 +1,64 @@
+\doxysection{debugger Module Reference}
+\hypertarget{namespacedebugger}{}\label{namespacedebugger}\index{debugger@{debugger}}
+\doxysubsubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacedebugger_a2a80a406f6ec8c66f91ad00432a194aa}{checkpoint}} (debug, verbosity, message, a, b, nrows, ncols)
+\begin{DoxyCompactList}\small\item\em Perform runtime debugging and validation checkpoints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedebugger_doc-func-members}
+\doxysubsection{Function/\+Subroutine Documentation}
+\Hypertarget{namespacedebugger_a2a80a406f6ec8c66f91ad00432a194aa}\index{debugger@{debugger}!checkpoint@{checkpoint}}
+\index{checkpoint@{checkpoint}!debugger@{debugger}}
+\doxysubsubsection{\texorpdfstring{checkpoint()}{checkpoint()}}
+{\footnotesize\ttfamily \label{namespacedebugger_a2a80a406f6ec8c66f91ad00432a194aa} 
+subroutine debugger\+::checkpoint (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{debug}{, }\item[{integer, intent(in)}]{verbosity}{, }\item[{character(len=\texorpdfstring{$\ast$}{*}), intent(in), optional}]{message}{, }\item[{real(real32), dimension(\+:,\+:), intent(in), optional}]{a}{, }\item[{real(real32), dimension(\+:,\+:), intent(in), optional}]{b}{, }\item[{integer, intent(in), optional}]{nrows}{, }\item[{integer, intent(in), optional}]{ncols}{}\end{DoxyParamCaption})}
+
+
+
+Perform runtime debugging and validation checkpoints. 
+
+The \textquotesingle{}checkpoint\textquotesingle{} subroutine provides an interface for handling debugging messages and validity checks for matrices during execution. Depending on the selected verbosity level, it can\+:
+\begin{DoxyItemize}
+\item 0\+: print a debug message
+\item 1\+: check matrix dimension compatibility
+\item 2\+: verify that a matrix is square
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em debug} & Logical flag to enable or disable debugging. \\
+\hline
+\mbox{\texttt{in}}  & {\em verbosity} & Integer verbosity level\+:
+\begin{DoxyItemize}
+\item {\bfseries{0}}\+: print a debug message
+\item {\bfseries{1}}\+: check matrix dimension compatibility
+\item {\bfseries{2}}\+: verify if a matrix is square or not 
+\end{DoxyItemize}\\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & message Custom message to print (verbosity 0 or 2). \\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & A(\+:,\+:) First matrix to check (verbosity 1). \\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & B(\+:,\+:) Second matrix to check (verbosity 1). \\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & nrows Number of rows (verbosity 2). \\
+\hline
+ & {\em \mbox{[}in,optional\mbox{]}} & ncols Number of columns (verbosity 2).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Stops} & execution if\+:
+\begin{DoxyItemize}
+\item matrix dimensions are incompatible (verbosity=1)
+\item matrix is not square (verbosity=2)
+\item an invalid verbosity level is provided
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+The subroutine safely exits if \textquotesingle{}debug\textquotesingle{} is \textquotesingle{}.false.\textquotesingle{} 
+\end{DoxyNote}
